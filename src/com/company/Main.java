@@ -16,15 +16,10 @@ public class Main {
             for (String word : words) {
                 String wordOut;
                 Word newWord = new Word(word);
-
-                newWord.chooseArrangement();
-                newWord.returnSpecialChars();
-                newWord.reCapitalize();
+                newWord.wordProcessing();
                 System.out.print(newWord.wordFinalCapitalized + " ");
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
